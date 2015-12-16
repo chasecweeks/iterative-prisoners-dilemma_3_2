@@ -64,4 +64,19 @@ Team Nate:
                 return 'b'
             else:
                 return 'b'
-
+Team Heather:
+        if getting_team_name:
+            return 'Team Heather'
+        else:
+            if len(opponent_history)==0: #It's the first round: collude
+                return 'c'
+            elif history[-1]=='c' and opponent_history[-1]=='c':
+                return 'c' #If player and opponent both collude, collude again
+            elif history[-1]=='c' and opponent_history[-1]=='b':
+                return 'b' #If player is betrayed by opponent, betray
+            elif history[-1]=='b' and opponent_history[-1]=='c':
+                return 'b' #If player betrays a colluding opponent, betray
+            elif history[-1]=='b' and opponent_history[-1]=='b':
+                return 'b' #If player and opponent betray eachother, betray
+            else:
+                return 'c' #otherwise collude
