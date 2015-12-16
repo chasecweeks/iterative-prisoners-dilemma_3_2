@@ -83,7 +83,7 @@ Team Heather:
 
 Team Ryan:
         if getting_team_name:
-            return 'Team Ryan'
+            return 'Team_Ryan'
         else:
             if len(opponent_history)==0: #It's the first round: collude
                 return 'b'
