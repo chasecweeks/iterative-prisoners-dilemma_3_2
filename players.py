@@ -85,9 +85,9 @@ Team Ryan:
         if getting_team_name:
             return 'Team_Ryan'
         else:
-            if len(opponent_history)==0: #It's the first round: collude
+            if len(opponent_history)==0: 
                 return 'b'
             elif history[-1]=='b' and opponent_history[-1]=='b':
-                return 'b' # betray is they were severely punished last time
+                return 'b' 
             else:
-                return 'b' #otherwise collude
+                return 'b' 
