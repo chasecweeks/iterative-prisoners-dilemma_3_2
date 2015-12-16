@@ -48,17 +48,20 @@ Team John:
 
 Team Chase
     if getting_team_name:
-            return 'TEAM_CHASE_'
+            return 'TEAM_CHASE'
         else:
-            if len(opponent_history)==0: #It's the first round: betray
+            if len(opponent_history)==0: 
                 return 'b'
             if history[-1]=='c' and opponent_history[-1]=='b':
                 return 'b' 
             if opponent_history[-1]=='c' and history[-1]=='b':
                 return 'b'
-            if score >= opponent_score:
+            if score >= opponent_score/2:
                 return 'c'
-            if score <= opponent_score:
+            if score <= opponent_score*score:
                 return 'b'
             else:
-                return 'c'
+                if history[-1]=='b':
+                    return 'b'
+                else:
+                    return 'c'
