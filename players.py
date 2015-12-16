@@ -60,10 +60,8 @@ Team Nate:
             else:
                 return 'b'
         if history[-1]=='b':
-            if opponent_history[-1]=='c':
-                return 'b'
-            else:
-                return 'b'
+            return 'b'
+            
 Team Heather:
         if getting_team_name:
             return 'Team Heather'
