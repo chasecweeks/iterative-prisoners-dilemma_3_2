@@ -102,3 +102,14 @@ Team Ryan:
                     return 'b' 
                 else:
                     return 'c' 
+                    
+Team Derek:
+           if getting_team_name:
+            return 'Team_Derek'
+        else:
+            if len(opponent_history)==0: 
+                return 'b'
+            elif history[-1]=='b' and opponent_history[-1]=='b':
+                return 'b' 
+            else:
+                return 'b' 
