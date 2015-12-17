@@ -113,6 +113,8 @@ Team Derek:
                 return 'b' 
             else:
                 return 'b' 
+            elif history[-1]=='b' and opponent_history[-1]=='c':
+               return 'b'
                 
 Team Cody:
         if getting_team_name:
