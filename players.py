@@ -61,9 +61,7 @@ Team Nate:
         if history[-1]=='c':
             if opponent_history[-1]=='c':
                 return 'c'
-            else:
-                return 'b'
-        if history[-1]=='b':
+        if history[-1]=='b' or opponent_history[-1]=='b':
             return 'b'
             
 Team Heather:
